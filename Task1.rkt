@@ -6,8 +6,24 @@
       #f
       (not (for/or [(d (in-range 2 number))]=(= 0 (remainder number d))))))
 
-(for [(num (in-range 2 11))] ; iterate from 2 to 11
-  (display "\n")(display num)(display " = ")
+; input function used to format the output
+(define (input num)
+  (display num)(display " = ")(display (decide-prime? num))
+  (display "\n"))
 
-  (display (decide-prime? num)))
+; Testing
+;(decide-prime? 3)
+;(decide-prime? 5)
+;(decide-prime? 37)
+;(decide-prime? 142)
+;(decide-prime? 1000)
+
+; Input number
+(input 9)
+(input 3)
+(input 4)
+(input 5)
+(input 10)
+
+
 
