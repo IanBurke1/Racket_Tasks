@@ -1,15 +1,13 @@
 #lang racket
+; decide-prime function to determine if a number is a prime number using brute-force.
+; decide-prime? means is 'n' equal to zero/null
+(define (decide-prime? number)
+  (if (= number 1)
+      #f
+      (not (for/or [(d (in-range 2 number))]=(= 0 (remainder number d))))))
 
-(define (decide-prime? n)
-  (define (not-divisible-by x y)
-    (cond
-      ((= y 1) #t)
-          (else (if(= (remainder x y) 0)
-                   #f
-                   (not-divisible-by x (- y 1))))))
-  (if (= n 1)
-      #t
-      (not-divisible-by n (- n 1))))
+(for [(num (in-range 2 11))] ; iterate from 2 to 11
+  (display "\n")(display num)(display " = ")
 
+  (display (decide-prime? num)))
 
-(decide-prime 1)
