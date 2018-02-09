@@ -1,0 +1,6 @@
+#lang racket
+
+(define (decide-prime n)
+  (if (null? n)
+      0
+      
