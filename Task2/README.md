@@ -19,20 +19,36 @@ Write, from scratch, a function in Racket that takes a positive integer n0 as in
  ```Racket
 (define (collats-list n)
   (if (even? n) ; if number is even then..
-      #t
-      #f
+      #t ;true
+      #f ;false
 
-(collats-list 5) ; odd number
+(collats-list 5) ; pass in 5
  ```
 
 ### Step 2
-Add our condition if the the integer is odd or even:
+Add our collatz algorithm:
 ```Racket
 (define (collats-list n)
     (if (even? n) ; if number is even then..
         (/ n 2) ; divide by 2
         (+ 1 (* 3 n)))) ; if odd, multiply by 3 and then add 1.
 
-(collats-list 5)
+(collats-list 5) ; pass in 5
+
+```
+### Step 3 
+Next we need the function to end once it returns 1:
+```Racket
+(define (collatz-list n)
+  (cond ((= n 1) ; condition, if n = 1 then..
+         '(1)) 
+        ((odd? n) ; otherwise, if number is odd then..
+         (cons n(collatz-list (+ 1(* 3 n))))) ; multiply by 3 and add 1 and list the values.
+        (else ; otherwise
+         (cons n (collatz-list (/ n 2)))))) ; divide by 2 and list the values        
+  
+
+(collatz-list 5) ; odd number
+(collatz-list 10) ; even number
 
 ```
