@@ -37,7 +37,7 @@ Add our collatz algorithm:
 
 ```
 ### Step 3 
-Next we need the function to end once it returns 1:
+Next we need the function to end once it returns 1 and return a list of values the algorithm goes through until it hits 1:
 ```Racket
 (define (collatz-list n)
   (cond ((= n 1) ; condition, if n = 1 then..
