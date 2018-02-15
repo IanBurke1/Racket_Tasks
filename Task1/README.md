@@ -26,7 +26,7 @@ Evaluate the integer. Check if the integer is equal to 1 or not:
 (decide-prime? 3) ; test our function
 ```
 ### Step 3
-If the integer is not equal to 1 then evaluate if the int is prime:
+If the integer is not equal to 1 then evaluate if the int is prime by using brute-force
 ```Racket
 (define (decide-prime? number)
   (if (= number 1)
@@ -35,7 +35,7 @@ If the integer is not equal to 1 then evaluate if the int is prime:
 ```
 
 ### Step 4
-Add brute-force method:
+Format the output
 ```Racket
 (define (decide-prime? number)
   (if (= number 1)
