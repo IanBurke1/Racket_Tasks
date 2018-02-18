@@ -46,8 +46,10 @@ So in this function we will remove the last element.
 
 ### Step 4
 Add our rcycle function to append the last element to the start of the list.
+```Racket
 ; Take in a list and move the last element to the start of the list.
 (define (rcycle l)
   (if (null? l) ; if list = null then..
       '() ; output null
       (append (cons (last l)(remove-last l))))) ; otherwise call the remove-last function to remove last element and append list to it
+```
