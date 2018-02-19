@@ -9,7 +9,8 @@ For example:
 > (rcycle (list 1 2 3 4 5)) '(5 1 2 3 4)
 ```
 
-## List
+### Stack Overflow
+https://stackoverflow.com/questions/7968150/moving-first-element-moved-to-the-end-of-the-list-scheme
 
 ### Step 1
 Create a function that takes in a list and check if the list is not null.
