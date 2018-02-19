@@ -4,6 +4,8 @@ This repository contains solutions to a number of tasks (Continuous assessments)
 
 **_The tasks sheet can be found at: [RacketTasks.pdf](https://github.com/ianburkeixiv/Racket_Tasks/blob/master/RacketTasks.pdf)_**
 
+**_[Racket Problem Sheet](https://github.com/ianburkeixiv/RacketProblemSheet)_**
+
 ## Racket
 Racket is a general purpose, multi-paradigm programming language in the Lisp-Scheme family. One of its design goals is to serve as a platform for language creation, design, and implementation. The language is used in a variety of contexts such as scripting, general-purpose programming, computer science education, and research.
 
