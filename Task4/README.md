@@ -52,3 +52,4 @@ output
   (2 3 4 -5)
   (1 2 3 4 -5))
 ```
+In my head I know that we would have to check that the sum of each combination equals to zero, if it does then print it out otherwise return null. Trying to translate that into racket is the hard part!
