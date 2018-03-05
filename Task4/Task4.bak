@@ -1,3 +1,14 @@
 #lang racket
 
-(define (sublsum l))
+(define (sublsum? l)
+  (cdr (combinations (cdr l))))
+
+(sublsum? (list 1 2 3 4 -5))
+
+(define (sum li)
+  (if (null? li)
+      '()
+      (+(car li)(cdr li))))
+
+;(sum (list 1 2 3 4))
+  
