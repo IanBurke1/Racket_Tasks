@@ -9,6 +9,23 @@ Write a function sublsum in Racket that takes a list (of integers) as input and 
 '()
 ```
 
+### Combinations
+Return a list of all combinations of elements in the input list (aka the powerset of lst). If size is given, limit results to combinations of size elements. Example:
+```Racket
+> (combinations '(1 2 3))
+'(() (1) (2) (1 2) (3) (1 3) (2 3) (1 2 3))
+```
+
+### apply
+Applies a procedure using the content of a list. Example:
+```Racket
+> (apply + '(1 2 3))
+6
+```
+
+### filter
+Returns a list with the elements of lst for which pred produces a true value. The pred procedure is applied to each element from first to last.
+
 ## Step 1
 Create a function called sublsum that takes in a list and return every combination of the list.
 ```Racket
