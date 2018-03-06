@@ -14,11 +14,13 @@ Create hamming-distance function and check if the length of both lists are equal
 #lang racket
 
 (define (hamming-distance l li)
+; if the list length of l is equal to length of li then..
   (if (= (length l)(length li))
-      #t
-      #f))
+      #t ; True, they both are equal, otherwise...
+      #f)) ; False
 
-(hamming-distance (list 1 0 1 0 1 1 1 0)(list 1 1 1 1 0 0 0 0))
+; Passing in our 2 lists
+(hamming-distance (list 1 0 1 0 1 1 1 0)(list 1 1 1 1 0 0 0 0)) ; expected result: #t
 ```
 
 ### Step 2
