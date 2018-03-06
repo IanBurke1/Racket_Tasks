@@ -113,3 +113,6 @@ Put together the code and test it.
 
 ;(sublsum? (list 1 2 3 4 5)) ; expected result: '(())
 ```
+## References
+- https://www.reddit.com/r/Racket/comments/7zzajd/take_a_list_and_output_sumlist_of_all_the/
+- https://docs.racket-lang.org/reference/pairs.html#%28def._%28%28lib._racket%2Fprivate%2Flist..rkt%29._filter%29%29
