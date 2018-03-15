@@ -6,11 +6,13 @@ This repository contains solutions to a number of tasks (Continuous assessments)
 
 
 
-## How to run
+## How to run 
 1. Download and install [Racket](http://download.racket-lang.org/).
-2. Open DrRacket to run the above Racket tasks. For example:
+2. Download the [zip](https://github.com/ianburkeixiv/Racket_Tasks/archive/master.zip) of this repository.
+3. Unzip/Extract the repo into preferred directory.
+4. Open DrRacket to run the above Racket tasks. For example:
 
-![](https://user-images.githubusercontent.com/22341150/37476024-fdb754a0-286b-11e8-8a4b-a57a56b245a6.gif)
+![](https://user-images.githubusercontent.com/22341150/37477036-98577ac4-286e-11e8-9591-d4a2a331765e.gif)
 
 
 
