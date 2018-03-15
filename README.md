@@ -6,6 +6,14 @@ This repository contains solutions to a number of tasks (Continuous assessments)
 
 **_[Racket Problem Sheet](https://github.com/ianburkeixiv/RacketProblemSheet)_**
 
+## How to run
+1. Download and install [Racket](http://download.racket-lang.org/).
+2. Open DrRacket to run Racket code.
+
+![](https://user-images.githubusercontent.com/22341150/37475354-6b886f2a-286a-11e8-88a7-35166aeb85ab.gif)
+
+
+
 ## Racket
 Racket is a general purpose, multi-paradigm programming language in the Lisp-Scheme family. One of its design goals is to serve as a platform for language creation, design, and implementation. The language is used in a variety of contexts such as scripting, general-purpose programming, computer science education, and research.
 
