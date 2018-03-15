@@ -15,6 +15,9 @@ This repository contains solutions to a number of tasks (Continuous assessments)
 ![](https://user-images.githubusercontent.com/22341150/37477036-98577ac4-286e-11e8-9591-d4a2a331765e.gif)
 
 
+## What is Functional Programming?
+Functional programming (FP) is a programming paradigm that is based on lambda calculus, a formal system developed by Alonzo Church in the 1930s. Functional programming is a style of building the structure and elements of computer programs, that treats computation as the evaluation of mathematical functions and avoids changing-state and mutable data. 
+
 
 ## Racket
 Racket is a general purpose, multi-paradigm programming language in the Lisp-Scheme family. One of its design goals is to serve as a platform for language creation, design, and implementation. The language is used in a variety of contexts such as scripting, general-purpose programming, computer science education, and research.
