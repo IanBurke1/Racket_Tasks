@@ -10,7 +10,7 @@ This repository contains solutions to a number of tasks (Continuous assessments)
 1. Download and install [Racket](http://download.racket-lang.org/).
 2. Open DrRacket to run Racket code.
 
-![](https://user-images.githubusercontent.com/22341150/37475598-f94af710-286a-11e8-9f80-c50261e11380.gif)
+![](https://user-images.githubusercontent.com/22341150/37476024-fdb754a0-286b-11e8-8a4b-a57a56b245a6.gif)
 
 
 
