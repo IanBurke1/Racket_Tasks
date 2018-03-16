@@ -39,16 +39,21 @@ Add our collatz algorithm:
 ### Step 3 
 Next we need the function to end once it returns 1 and return a list of values the algorithm goes through until it hits 1:
 ```Racket
+#lang racket
+; Define our collatz-list function.
 (define (collatz-list n)
-  (cond ((= n 1) ; condition, if n = 1 then..
-         '(1)) 
-        ((odd? n) ; otherwise, if number is odd then..
-         (cons n(collatz-list (+ 1(* 3 n))))) ; multiply by 3 and add 1 and list the values.
-        (else ; otherwise
-         (cons n (collatz-list (/ n 2)))))) ; divide by 2 and list the values        
+  ; Using cond as there are a few conditions..
+  (cond ((= n 1) ; if n = 1 then..
+         '(1)) ; return 1, otherwise...
+        ((odd? n) ; if number is odd then..
+         ; cons returns a pair (list) of results with the last element being 1
+         (cons n(collatz-list (+ 1(* 3 n))))) ; multiply by 3 and add 1.
+        (else ; otherwise, if number is even then..
+         (cons n (collatz-list (/ n 2)))))) ; divide by 2         
   
 
 (collatz-list 5) ; odd number
 (collatz-list 10) ; even number
+
 
 ```
