@@ -10,6 +10,20 @@ For example:
 > (rcycle (list 1 2 3 4 5)) 
 '(5 1 2 3 4)
 ```
+## Pairs and Lists
+A [pair](https://docs.racket-lang.org/reference/pairs.html) combines exactly two values. The first value is accessed with the car procedure, and the second value is accessed with the cdr procedure. Pairs are not mutable.
+
+A [list](https://docs.racket-lang.org/reference/pairs.html) is recursively defined: it is either the constant null, or it is a pair whose second value is a list.
+
+#### (cons a d)
+Returns a newly allocated pair whose first element is 'a' and second element is 'd'
+
+#### (car p) 
+Returns the first element of the pair 'p'.
+
+#### (cdr p) 
+Returns the second element of the pair 'p'.
+
 ## Left cycle
 ### Step 1
 Create a function that takes in a list and check if the list is not null.
