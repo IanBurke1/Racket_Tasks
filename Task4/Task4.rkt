@@ -2,12 +2,12 @@
 
 (define (sublsum? l)
   ; Combinations is a built in racket function that returns every combination of elements in a list
-  ; cdr is used to just return the 2nd element of the list pair due to the 1st element being null
+  ; cdr is used to just return the 2nd element of the pair due to the 1st element being null
   ; using filter, another racket func, to list out only the sublists that are true, in this case, sum of each sublist is equal to zero
-  (filter sum (cdr (combinations l))))
+  (filter comboSum (cdr (combinations l))))
 
 ; Function used to calculate sum of elements in each sublist returned from combinations
-(define (sum li)
+(define (comboSum li)
   (if (null? li) ; if list = null then..
       '() ; return null, otherwise...
       ; 'apply' is a racket function used to calculate the sum of elements in a list
