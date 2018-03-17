@@ -44,6 +44,34 @@ Added apply function to sum the content in the list after being filtered.
 (hamming-weight? (list 1 0 1 0 1 1 1 0)) ; expected result: 5
 ```
 
+## Using recursion
+### Step 1
+Create another function that takes in a list and check that it's not null.
+```Racket
+(define (hammingWeight lst)
+  (if (null? lst) ; if list is null then..
+      0 ; return zero, otherwise...
+      #t))
+
+;pass in binary list
+(hammingWeight (list 1 1 1 0 0 0 1 0)) ; expected result: 4
+```
+
+### Step 2
+Add our recursion.
+```Racket
+(define (hammingWeight lst)
+  (if (null? lst) ; if list is null then..
+      0 ; return zero, otherwise...
+      ; Using recursion, take the 2nd elements of the pair (cdr list)..
+      ; then take the 1st element of the pair (car list) and repeat..
+      ; until the end of the list = null and adding all the 1st elements as the process goes on..
+      (+ (car lst) (hammingWeight (cdr lst)))))
+
+;pass in binary list
+(hammingWeight (list 1 1 1 0 0 0 1 0)) ; expected result: 4
+```
+
 ### References
 - https://docs.racket-lang.org/reference/pairs.html#%28def._%28%28lib._racket%2Fprivate%2Flist..rkt%29._filter%29%29
 - https://docs.racket-lang.org/reference/procedures.html

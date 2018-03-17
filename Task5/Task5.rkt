@@ -3,7 +3,24 @@
 ; hamming-weight function takes in a list and returns the number of non-zero elements in it. 
 (define (hamming-weight? l)
   ; using apply function to sum the elements remaining in the list after being filtered.
-  (apply +(filter positive? l))) ; Using racket's filter function to filter the list to return a list of positive numbers not equal to zero
+  (apply +(filter positive? l))) ; Using racket's filter function to filter the list in order to return a list of positive numbers not equal to zero
 
-; passing in a list
+; passing in binary list
 (hamming-weight? (list 1 0 1 0 1 1 1 0)) ; expected result: 5
+
+; OR
+
+; Another way using recursion.
+(define (hammingWeight lst)
+  (if (null? lst) ; if list is null then..
+      0 ; return zero, otherwise...
+      ; Using recursion, take the 2nd elements of the pair (cdr list)..
+      ; then take the 1st element of the pair (car list) and repeat..
+      ; until the end of the list = null and adding all the 1st elements as the process goes on..
+      (+ (car lst) (hammingWeight (cdr lst)))))
+
+;pass in binary list
+(hammingWeight (list 1 1 1 0 0 0 1 0)) ; expected result: 4
+
+
+  
