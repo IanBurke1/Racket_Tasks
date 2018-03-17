@@ -15,13 +15,13 @@ A [pair](https://docs.racket-lang.org/reference/pairs.html) combines exactly two
 
 A [list](https://docs.racket-lang.org/reference/pairs.html) is recursively defined: it is either the constant null, or it is a pair whose second value is a list.
 
-#### (cons a d)
+#### *(cons a d)*
 Returns a newly allocated pair whose first element is 'a' and second element is 'd'
 
-#### (car p) 
+#### *(car p)*
 Returns the first element of the pair 'p'.
 
-#### (cdr p) 
+#### *(cdr p)*
 Returns the second element of the pair 'p'.
 
 ## Left cycle
@@ -141,3 +141,6 @@ Put it all together
 
 (rcycle(list 1 2 3 4 5)) ; expected output: '(5 1 2 3 4)
 ```
+## References
+- https://docs.racket-lang.org/reference/pairs.html
+- https://stackoverflow.com/questions/22947366/scheme-how-do-you-append-a-list-with-a-single-item
