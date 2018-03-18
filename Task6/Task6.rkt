@@ -6,7 +6,7 @@
       0 ; output 0
       (if (null? li) ; if list2 = null then..
           0 ; output 0, otherwise..
-          (if (= (car l)(car li)) ; if the 1st element of list1 and list2 are equal then..
+          (if (= (car l)(car li)) ; if the 1st element of list1 and list2 are equal then.. ('car' takes the 1st element from the pair)
               (hamming-distance (cdr l) (cdr li)) ; take the 2nd elements of the pair from both lists recursively
               (+ 1 (hamming-distance (cdr l) (cdr li))))))) ; otherwise if not equal then add 1 until the end of the lists.
 ; For Example:
