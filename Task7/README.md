@@ -4,3 +4,20 @@ Write a function maj in Racket that takes three lists x, y and z of equal length
 > (maj (list 0 0 0 0 1 1 1 1) (list 0 0 1 1 0 0 1 1) (list 0 1 0 1 0 1 0 1)) 
 '(0 0 0 1 0 1 1 1)
 ```
+
+## Majority
+Find the majority of 0's and 1's in the first elements, second elements, third elements and so on in the three lists.
+
+### Step 1
+
+```Racket
+
+```
+
+### Step 2
+
+```Racket
+
+```
+
+## References
