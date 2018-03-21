@@ -7,14 +7,13 @@
   ; if the length of the 3 lists are NOT equal then..
       (if (not(= (length x)(length y)(length z)))
           '() ; output null, otherwise...
-          ; Iterate through the 3 lists and add the elements by mapping the..
-          ; 1st element in each list together, then add the 2nd elements, 3rd elements and so on until end.
-          ; if the sum of the elements is greater than 1 then return 1 (majority is 1's) otherwise 0 (majority is 0's)..
-          ; in a new list containing the majority of 1's and 0's
+          ; Map through the 3 lists and add the 1st,2nd,3rd... elements
+          ; if the sum of the elements is greater than 1 then return 1 (majority are 1's) otherwise 0 (majority are 0's)..
+          ; The result is a list containing each result of procedure in order.
           (map (lambda (x y z)
                  (if (> (+ x y z) 1) 1 0)) x y z)))
-          ; map is a built in racket function that iterates through the 3 lists (x y z) and maps a procedure to each corresponding element in the 3 lists using lambda as a..
-          ; shortcut to pass in and evaluate each list.
+; map is a built in racket function that iterates through the 3 lists (x y z) and maps a procedure to each corresponding element in the 3 lists using lambda as a..
+; shortcut to define the lists and procedure instead of creating a seperate function.
 
       
   
