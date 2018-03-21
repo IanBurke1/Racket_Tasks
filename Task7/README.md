@@ -5,10 +5,7 @@ Write a function maj in Racket that takes three lists x, y and z of equal length
 '(0 0 0 1 0 1 1 1)
 ```
 
-## Majority
-Find the majority of 0's and 1's in the first elements, second elements, third elements and so on in the three lists.
-
-## Map
+#### Map
 Applies procedure to the elements of the list(s) from the first elements to the last. The procedure arguement must accept the same number of arguments as the number of supplied lists, and all lists must have the same number of elements. The result is a list containing each result of procedure in order.
 
 Example:
@@ -20,7 +17,7 @@ Example:
 '(2 3 4 5)
 ```
 
-## Lambda
+#### Lambda expressions
 A lambda expression creates a function. In the simplest case, a lambda expression has the form. Basically, instead of creating a total seperate function to use in another function, you can just use lambda as a shortcut to create a function to use it as an argument to another function (like for example map), without defining the function.
 
 For Example:
@@ -52,11 +49,11 @@ Create our maj function and check that the 3 lists passed in are not null and ha
   ; if the length of the 3 lists are NOT equal then..
       (if (not(= (length x)(length y)(length z)))
           '() ; output null, otherwise...
-          #t))
+          #t)) ; return True
 ```
 
 ### Step 2
-So one of the ways to find the majority is to go through the 3 lists and add each corresponding element in order i.e. sum all the 1st,2nd,3rd.. elements of the 3 lists and if the sum is bigger than 1 then the majority of elements is 1's otherwise 0's. For example, (1 ....) (1 ...) (0 ...) => 1 + 1 + 0 = 2
+So one of the ways to find the majority is to go through the 3 lists and add each corresponding element in order i.e. sum all the 1st elements of the 3 lists and if the sum is bigger than 1 then the majority of elements is 1's otherwise 0's. For example, (1 ....) (1 ...) (0 ...) => 1 + 1 + 0 = 2 ..then majority of 1st elements is 1
 
 ```Racket
 (define (maj x y z)
@@ -100,3 +97,6 @@ Test our function.
 ```
 
 ## References
+- https://docs.racket-lang.org/reference/pairs.html#%28def._%28%28lib._racket%2Fprivate%2Fmap..rkt%29._map%29%29
+- https://stackoverflow.com/questions/25696063/lambda-in-racket-explained
+- https://stackoverflow.com/questions/2943072/whats-the-point-of-lambda-in-scheme
