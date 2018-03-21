@@ -21,9 +21,21 @@ Example:
 ```
 
 ## Lambda
-A lambda expression creates a function. In the simplest case, a lambda expression has the form. Basically, instead of creating a total seperate function, you can just use lambda as a shortcut to pass in a one shot function as a parameter without defining it first.
+A lambda expression creates a function. In the simplest case, a lambda expression has the form. Basically, instead of creating a total seperate function to use in another function, you can just use lambda as a shortcut to create a function to use it as an argument to another function (like for example map), without defining the function.
+For Example:
+If you want to add 10 to every number in a list you can do:
+```Racket
+(define (addten l) (+ l 42))
+(map addten (list 1 2 3 4))
+```
+Instead of naming and defining the function that you only just use once, you can use lambda as a shortcut:
+```Racket
+(map (lambda (l) (+ l 42)) (list 1 2 3 4))
+> 
+```
 
 Very good examples and explainations of Lambda expressions:
+
 https://stackoverflow.com/questions/25696063/lambda-in-racket-explained
 
 https://stackoverflow.com/questions/2943072/whats-the-point-of-lambda-in-scheme
