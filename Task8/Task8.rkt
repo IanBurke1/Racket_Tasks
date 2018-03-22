@@ -6,7 +6,7 @@
   (if (null? x)(null? y)(null? z)) ; If each list is null then..
   '() ; return null, otherwise..
   (if (not (= (length x)(length y)(length z))) ; if length of the lists are not equal then..
-      '() ; return null, otherwise..
+      (display "Lists's are not equal in length ") ; display message, otherwise..
       ; Map through the 3 lists and
       ; check if elements in x is equal to 1 then..
       ; add the corresponding element in y to a new list
@@ -17,3 +17,4 @@
 
 ; pass in 3 lists
 (chse (list 0 0 0 0 1 1 1 1)(list 0 0 1 1 0 0 1 1)(list 0 1 0 1 0 1 0 1)) ; Expected result: '(0 1 0 1 0 0 1 1)
+(chse (list 1 1 0 0 1 0 0 1)(list 1 0 0 1 0 0 1 1)(list 1 1 0 1 0 1 0 1)) ; Expected result: '(1 0 0 1 0 1 0 1) 
