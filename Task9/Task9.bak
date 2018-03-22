@@ -1,0 +1,9 @@
+#lang racket
+
+(define (sod2 x y z )
+  (if (null? x)(null? y)(null? z)
+      '()
+      (if (not (= (length x)(length y)(length z)))
+          '()
+          (map (lambda (x y z)
+                 (if (+ (x y z)) x y z))))))
