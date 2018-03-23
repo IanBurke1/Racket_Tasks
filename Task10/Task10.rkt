@@ -5,8 +5,7 @@
 (define (lstq l m)
   (apply + (map (lambda (l m) (sqrt (- m l) )) l m)))
 
-(define (sqrt x)
-  (* x x))
+(define (sqrt x)(* x x))
 
 ; Pass in 2 lists
 (lstq (list 4.5 5.1 6.2 7.8) (list 1.1 -0.1 6.1 3.8)) ; Expected result: 54.61
@@ -16,9 +15,9 @@
 (define (lstq2 l m)
   (if (null? l)
       '()
-      (cons (- (car l)(car m)) (lstq (cdr l)(cdr m)))))
-      
+      (cons (sqrt (- (car l)(car m))) (lstq2 (cdr l)(cdr m)))))
+
 
 ; Pass in 2 lists
-(lstq2 (list 4.5 5.1 6.2 7.8) (list 1.1 -0.1 6.1 3.8)) ; Expected result: 54.61
+(lstq2 (list 4.5 5.1 6.2 7.8)(list 1.1 -0.1 6.1 3.8)) ; Expected result: 54.61
 

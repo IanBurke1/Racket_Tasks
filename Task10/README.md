@@ -26,3 +26,4 @@ This means take the ith element of m from the ith element of l and square the re
 ```
 
 ## References
+- https://stackoverflow.com/questions/22560573/how-to-do-square-in-racket
