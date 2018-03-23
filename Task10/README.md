@@ -11,3 +11,18 @@ This means take the ith element of m from the ith element of l and square the re
 
 54.61
 ```
+
+### Step 1
+```Racket
+```
+### Step 2
+```Racket
+
+```
+
+### Step 3
+
+```Racket
+```
+
+## References
