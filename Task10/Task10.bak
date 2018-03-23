@@ -1,0 +1,6 @@
+#lang racket
+
+(define (lstq l m)
+  (if (null? l)(null? m)
+      '()
+      #t))
