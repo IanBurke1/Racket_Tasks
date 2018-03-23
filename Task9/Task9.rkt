@@ -12,7 +12,12 @@
           ;   return a new list containing a 1 otherwise if sum is even then put in a zero in that position
           (map (lambda (x y z)
                  (if (odd? (+ x y z) ) 1 0)) x y z)))
+; For example:
+;  1st elements in list x = (1 ....) list y = (1 ...) list z = (1 ...) => 1 + 1 + 1 = 3 which is a odd number...
+;   Therefore, add a 1 in a new list => (1)
+;  2nd elements in list z (1 0 ...) list y = (1 0 ...) list z = (1 0 ...) => 0 + 0 + 0 = 0 which is a even number...
+;   Therefore, add a 0 in the new list => (1 0) ..and so on with the rest of the elements in x y z until the end of the lists.
 
-; Passing in 3 lists containing only 1's and 0's
+; Pass in 3 lists containing only 1's and 0's
 (sod2 (list 0 0 0 0 1 1 1 1) (list 0 0 1 1 0 0 1 1) (list 0 1 0 1 0 1 0 1)) ; Expected result: '(0 1 1 0 1 0 0 1)
 (sod2 (list 1 0 0 0 1 0 0 1) (list 1 0 1 1 1 0 1 1) (list 1 0 0 1 1 1 0 1)) ; Expected result: '(1 0 1 0 1 1 1 1)
