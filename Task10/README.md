@@ -76,6 +76,8 @@ Next we add in our square function and also apply function, a built in racket fu
 (lstq (list 4.5 5.1 6.2 7.8) (list 1.1 -0.1 6.1 3.8)) ; Expected result: 54.61
 ```
 
+## Or using recursion
+
 ### Step 1
 Create a function and check if the list is null. Recursively take the 2nd elements from both lists (pairs) using (lstq2 (cdr l)(cdr m)) and also take the 1st elements using (car l)(car m). Then subtract the corresponding elements and return the results in a new list.
 ```Racket
