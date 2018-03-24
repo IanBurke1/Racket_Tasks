@@ -12,8 +12,42 @@ This means take the ith element of m from the ith element of l and square the re
 54.61
 ```
 
+### Map
+Applies procedure to the elements of the list(s) from the first elements to the last. The procedure arguement must accept the same number of arguments as the number of supplied lists, and all lists must have the same number of elements. The result is a list containing each result of procedure in order.
+
+Example:
+```Racket 
+> (map (lambda (number)
+         (+ 1 number))
+       '(1 2 3 4))
+
+'(2 3 4 5)
+```
+
+### Lambda expressions
+A lambda expression creates a function. In the simplest case, a lambda expression has the form. Basically, instead of creating a total seperate function to use in another function, you can just use lambda as a shortcut to create a function to use it as an argument to another function (like for example map), without defining the function.
+
+For Example:
+
+If you want to add 10 to every number in a list you can do:
+```Racket
+(define (addten l) (+ l 42))
+(map addten (list 1 2 3 4))
+```
+Instead of naming and defining the function that you only use once, you can use lambda as a shortcut:
+```Racket
+(map (lambda (l) (+ l 42)) (list 1 2 3 4))
+> 
+```
+
+Here a very good examples and explainations of Lambda expressions:
+
+https://stackoverflow.com/questions/25696063/lambda-in-racket-explained
+
+https://stackoverflow.com/questions/2943072/whats-the-point-of-lambda-in-scheme
+
 ### Step 1
-We will use the map function map the two lists l and m along with a lambda expression to add a procedure such as subtraction. 
+We will use the map function to map the two lists l and m along with a lambda expression to add a procedure such as subtraction. 
 ```Racket
 (define (lstq l m)
   (map (lambda (l m) (- l m) ) l m))
@@ -25,7 +59,7 @@ The next step is to square the results from the subtractions. To do this, we nee
 ```
 
 ### Step 3
-Next we add in our square function and also apply function which applies a procedure such as addition to find the sum of the squared elements in the list.
+Next we add in our square function and also apply function, a built in racket function, which applies a procedure such as addition to find the sum of the squared elements in the list.
 ```Racket
 (define (lstq l m)
   (apply + (map (lambda (l m) (square (- m l) )) l m)))
@@ -43,7 +77,7 @@ Next we add in our square function and also apply function which applies a proce
 ```
 
 ### Step 1
-Create a function and check if the list is null. Recursively take the 2nd elements from both lists (pairs) and take the 1st elements. Then subtract the corresponding elements and return the results in a new list.
+Create a function and check if the list is null. Recursively take the 2nd elements from both lists (pairs) using (lstq2 (cdr l)(cdr m)) and also take the 1st elements using (car l)(car m). Then subtract the corresponding elements and return the results in a new list.
 ```Racket
 (define (lstq2 l m)
   (if (null? l) ; if list l is null then..
