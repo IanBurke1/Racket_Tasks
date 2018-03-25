@@ -13,7 +13,7 @@ For example:
 ## Pairs and Lists
 A [pair](https://docs.racket-lang.org/reference/pairs.html) combines exactly two values. The first value is accessed with the car procedure, and the second value is accessed with the cdr procedure. Pairs are not mutable.
 
-A [list](https://docs.racket-lang.org/reference/pairs.html) is recursively defined: it is either the constant null, or *it is a pair whose second value is a list.*
+A [list](https://docs.racket-lang.org/reference/pairs.html) is recursively defined: it is either the constant null, or **it is a pair whose second value is a list.**
 
 #### *(cons a d)*
 Returns a newly allocated pair whose first element is 'a' and second element is 'd'
