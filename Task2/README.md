@@ -18,7 +18,7 @@ Write, from scratch, a function in Racket that takes a positive integer n0 as in
  Create a function that takes in a number, check if the number is odd or even:
  ```Racket
 (define (collats-list n)
-  (if (even? n) ; if number is even then..
+  (if (even? n) ; using racket even function to check if number is even then..
       #t ;true
       #f ;false
 
@@ -42,7 +42,7 @@ Next we need the function to end once it returns 1 and return a list of values t
 #lang racket
 ; Define our collatz-list function.
 (define (collatz-list n)
-  ; Using cond as there are a few conditions..
+  ; Using cond-clause as there are a few conditions..
   (cond ((= n 1) ; if n = 1 then..
          '(1)) ; return 1, otherwise...
         ((odd? n) ; if number is odd then..
@@ -57,3 +57,7 @@ Next we need the function to end once it returns 1 and return a list of values t
 
 
 ```
+
+## References
+- https://docs.racket-lang.org/reference/if.html
+- https://docs.racket-lang.org/reference/number-types.html
