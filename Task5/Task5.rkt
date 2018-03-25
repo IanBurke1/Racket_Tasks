@@ -8,9 +8,11 @@
 ; passing in binary list
 (hamming-weight? (list 1 0 1 0 1 1 1 0)) ; expected result: 5
 
-; OR
 
-; Another way using recursion.
+; OR
+; Another way to get the hamming-weight by using recursion..
+
+
 (define (hammingWeight lst)
   (if (null? lst) ; if list is null then..
       0 ; return zero, otherwise...
