@@ -44,6 +44,8 @@ Added apply function to sum the content in the list after being filtered.
 (hamming-weight? (list 1 0 1 0 1 1 1 0)) ; expected result: 5
 ```
 
+
+
 ## Another way Using recursion
 ### Step 1
 Create another function that takes in a list and check that it's not null.
