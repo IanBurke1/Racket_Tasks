@@ -133,3 +133,4 @@ Add sumlst function to get the sum of the squared results.
 
 ## References
 - https://stackoverflow.com/questions/22560573/how-to-do-square-in-racket
+- https://docs.racket-lang.org/reference/pairs.html#%28def._%28%28lib._racket%2Fprivate%2Fmap..rkt%29._map%29%29
