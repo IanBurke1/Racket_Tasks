@@ -7,7 +7,7 @@ A prime number is a number that is divisible only by itself and 1. For example, 
 ## What is a brute-force algorithm
 In computer science, brute-force search or exhaustive search, also known as generate and test, is a very general problem-solving technique that consists of systematically enumerating all possible candidates for the solution and checking whether each candidate satisfies the problem's statement.
 
-## Functions used
+## Racket functions used
 #### for/or
 Iterates like for, but when last expression of body produces a value other than #f, then iteration terminates, and the result of the for/or expression is the same (single) value. If the body is never evaluated, then the result of the for/or expression is #f. Otherwise, the result is #f.
 
