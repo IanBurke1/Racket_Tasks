@@ -16,19 +16,17 @@ This repository contains solutions to a number of tasks (Continuous assessments)
 
 
 ## What is Functional Programming?
-Functional programming (FP) is a programming paradigm that is based on lambda calculus, a formal system developed by Alonzo Church in the 1930s. Functional programming is a style of building the structure and elements of computer programs, that treats computation as the evaluation of mathematical functions and avoids changing-state and mutable data.
+[Functional programming (FP)](https://en.wikipedia.org/wiki/Functional_programming) is a programming paradigm that is based on lambda calculus, a formal system developed by Alonzo Church in the 1930s. Functional programming is a style of building the structure and elements of computer programs, that treats computation as the evaluation of mathematical functions and avoids changing-state and mutable data.
 
 ## What is Imperative programming?
-Imperative programming is the most dominant paradigm with languages such as Java, C, C++, Python Ruby and many more. It uses statements that change a program's state. It is characteristic of a sequence of steps/instructions that happen in order. Common constructs to manipulate the flow of these instructions include while statements and for loops. Variables are used to keep track of everything computed and which state the program is at which then can control where the program should go to next which continues to modify the state. The sequence of state changes is often called a side effect. The reason it is called a side effect is because it has the potential to modify the state, thus changing the flow of the program.
+[Imperative programming](https://en.wikipedia.org/wiki/Imperative_programming) is the most dominant paradigm with languages such as Java, C, C++, Python, Ruby and many more. It uses statements that change a program's state. It is characteristic of a sequence of steps/instructions that happen in order. Common constructs to manipulate the flow of these instructions include ***while*** statements and ***for*** loops. Variables are used to keep track of everything computed and which state the program is at which then can control where the program should go to next which continues to modify the state. The sequence of state changes is often called a side effect. The reason it is called a side effect is because it has the potential to modify the state, thus changing the flow of the program.
 
-#### Difference between functional and imperative programming
+### Difference between functional and imperative programming
 Functional Programming supports a pure functional approach to problem solving. A pure function is the equivalent of a mathematical function. The same inputs will always map to the same outputs. They also lack any side effects (other than returning a value or values) which means the compiler can do some optimizations which makes it easier to run a function in parallel as there's nothing to contend with. This means that pure functions are composable: that is, self-contained and stateless. These characteristics bring a number of benefits, including the following: Increased readability and maintainability. This is because each function is designed to accomplish a specific task given its arguments. The function does not rely on any external state. 
 
-Instead of for and while loops, recursion is used instead. Most people are exposed to recursion in imperative languages, but functional languages can have special support for recursion.
+Instead of ***for*** and ***while*** loops, **recursion** is used instead. Most people are exposed to recursion in imperative languages, but functional languages can have special support for recursion.
 
-
-
-https://stackoverflow.com/questions/17826380/what-is-difference-between-functional-and-imperative-programming-languages
+Ref: https://stackoverflow.com/questions/17826380/what-is-difference-between-functional-and-imperative-programming-languages
 
 
 ## Racket
